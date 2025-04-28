@@ -1,5 +1,4 @@
 .block.quote {
-    
     padding: 0 0 24px;
     display: flex;
     flex-direction: column;
@@ -60,10 +59,12 @@
 
 .bg-red {
     background-color: #ffdddd;
-  }
-  .bg-green {
+}
+  
+.bg-green {
     background-color: #ddffdd;
-  }
-  .bg-blue {
+}
+
+.bg-blue {
     background-color: #ddddff;
-  }
+}
