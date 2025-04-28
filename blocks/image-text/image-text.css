@@ -65,9 +65,11 @@
 }
   
 @media (width <= 1024px) {
+
     .image-text-wrapper {
       flex-direction: column;
     }
+    
     .image-text.block > div {
       min-width: 100%;
       padding: 1rem;
