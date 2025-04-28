@@ -6,7 +6,6 @@
     max-width: 1200px; /* Optional: set a max width */
     margin: 0 auto;    /* Optional: center the block */
     background: #fff;  /* Optional: background color */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Optional: subtle shadow */
 }
   
 .image-text.block > div:nth-child(1) {
@@ -25,7 +24,7 @@
     object-fit: cover;
     display: block;
 }
-  
+
 .image-text.block > div:not(:nth-child(1)) {
     flex: 1 1 50%;
     min-width: 300px;
@@ -69,7 +68,7 @@
     .image-text-wrapper {
       flex-direction: column;
     }
-    
+
     .image-text.block > div {
       min-width: 100%;
       padding: 1rem;
