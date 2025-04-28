@@ -64,7 +64,6 @@
 }
   
 @media (width <= 1024px) {
-
     .image-text-wrapper {
       flex-direction: column;
     }
