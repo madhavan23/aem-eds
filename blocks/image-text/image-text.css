@@ -1,40 +1,75 @@
-.image-text-block {
+.image-text-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px; /* Optional: set a max width */
+    margin: 0 auto;    /* Optional: center the block */
+    background: #fff;  /* Optional: background color */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Optional: subtle shadow */
 }
   
-.image-text-block .text-content {
+.image-text.block > div:nth-child(1) {
     flex: 1 1 50%;
-    order: 1;
-}
-  
-.image-text-block .image-content {
-    flex: 1 1 50%;
-    order: 2;
+    min-width: 300px;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    background: #7f7; /* Optional: light background for image side */
 }
   
-.image-text-block .image-content img {
-    max-width: 100%;
+.image-text.block > div:nth-child(1) img {
+    width: 100%;
     height: auto;
-    display: block;
+    max-width: 100%;
     object-fit: cover;
+    display: block;
 }
   
-  /* Responsive: Stack on mobile */
-
-@media (width<= 1024px) {
-    .image-text-block {
-        flex-direction: column;
+.image-text.block > div:not(:nth-child(1)) {
+    flex: 1 1 50%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+  
+.image-text.block h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+  
+.image-text.block p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+  
+.button-container {
+    margin-top: 2rem;
+}
+  
+.button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #000;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;  
+}
+  
+.button:hover {
+    background: #fa3;
+}
+  
+@media (width <= 1024px) {
+    .image-text-wrapper {
+      flex-direction: column;
     }
-
-    .image-text-block .text-content,
-    .image-text-block .image-content {
-        flex: 1 1 100%;
-        order: unset;
-        justify-content: flex-start;
+    .image-text.block > div {
+      min-width: 100%;
+      padding: 1rem;
     }
 }
