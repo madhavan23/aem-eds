@@ -1,0 +1,38 @@
+.image-text-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+  
+.image-text-block .text-content {
+    flex: 1 1 50%;
+    order: 1;
+}
+  
+.image-text-block .image-content {
+    flex: 1 1 50%;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.image-text-block .image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+  
+  /* Responsive: Stack on mobile */
+@media (max-width: 1024px) {
+    .image-text-block {
+        flex-direction: column;
+    }
+    .image-text-block .text-content,
+    .image-text-block .image-content {
+        flex: 1 1 100%;
+        order: unset;
+        justify-content: flex-start;
+    }
+}
