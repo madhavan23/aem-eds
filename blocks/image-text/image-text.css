@@ -26,10 +26,11 @@
   
   /* Responsive: Stack on mobile */
 
-@media (max-width<= 1024px) {
+@media (width<= 1024px) {
     .image-text-block {
         flex-direction: column;
     }
+
     .image-text-block .text-content,
     .image-text-block .image-content {
         flex: 1 1 100%;
