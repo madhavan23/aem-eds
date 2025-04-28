@@ -89,7 +89,7 @@
             padding: 0;
 
             .button {
-                background-color: #ffff00;
+                background-color: #ff0;
                 border-radius: 0;
                 color: var(--dark-color);
                 font-size: var(--body-font-size-xs);
