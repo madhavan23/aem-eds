@@ -19,7 +19,7 @@ export default function decorate() {
     textContainer.classList.add('text-wrapper');
 
     const detailsDivs = imageText.querySelectorAll(
-      'div[data-aue-prop="title"], div[data-aue-prop="description"], p.button-container'
+      'div[data-aue-prop="title"], div[data-aue-prop="description"], p.button-container',
     );
 
     detailsDivs.forEach((div) => {
