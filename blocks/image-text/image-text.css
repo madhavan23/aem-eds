@@ -13,7 +13,7 @@
 
   .image-text-parent-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .image-text-container .text-wrapper {
@@ -40,7 +40,7 @@
   }
   
   @media (width >= 1024px) {
-    .image-text-wrapper {
+    .image-text-parent-container {
       flex-direction: row;
     }
   
