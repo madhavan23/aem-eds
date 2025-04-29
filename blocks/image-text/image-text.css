@@ -2,8 +2,6 @@
     max-width: unset;
     padding: 60px 0;
     background-color: #2e2d2c;
-    display: flex;
-    flex-direction: row;
 }
   
   .image-text-wrapper {
@@ -11,6 +9,11 @@
     margin-right: 80px;
     position: relative;
     min-height: fit-content;
+  }
+
+  .image-text-parent-container {
+    display: flex;
+    flex-direction: row;
   }
 
   .image-text-container .text-wrapper {
@@ -36,8 +39,8 @@
     border-top-right-radius: 80px;
   }
   
-  @media (width >= 900px) {
-    .text-image-wrapper {
+  @media (width >= 1024px) {
+    .image-text-wrapper {
       flex-direction: row;
     }
   

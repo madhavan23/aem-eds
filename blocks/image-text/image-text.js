@@ -11,7 +11,7 @@ export default function decorate() {
 
       const parentDiv = imageDiv.parentElement;
       if (parentDiv) {
-        parentDiv.classList.add('image-text-container');
+        parentDiv.classList.add('image-text-parent-container');
       }
     }
 
