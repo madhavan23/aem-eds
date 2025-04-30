@@ -2,7 +2,6 @@ export default function decorate() {
   // Select all elements
   const imageTextWrapper = document.querySelectorAll('.image-text-wrapper');
   imageTextWrapper.forEach((imageText) => {
-
     const imagePosition = imageText.getAttribute('data-image-position') || 'left';
 
     // Add a class for image position
