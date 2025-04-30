@@ -56,6 +56,20 @@
                     "name": "textContent_ctaText",
                     "label": "CTA label",
                     "valueType": "string"
+                },
+                {
+                  "component": "select",
+                  "name": "classes",
+                  "value": "",
+                  "label": "Image Side",
+                  "description": "change image side",
+                  "valueType": "string",
+                  "options": [
+                    {
+                      "name": "Right",
+                      "value": "right-img"
+                    }
+                  ]
                 }
             ]
         }
