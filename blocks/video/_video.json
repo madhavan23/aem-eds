@@ -23,8 +23,15 @@
                 {
                     "component": "reference",
                     "valueType": "string",
-                    "name": "video",
-                    "label": "video"
+                    "name": "image",
+                    "label": "Image",
+                    "multi": false
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "videoUrl",
+                    "label": "Video URL"
                 },
                 {
                     "component": "richtext",
@@ -43,7 +50,7 @@
     ],
     "filters": [
         {
-            "id": "text-image",
+            "id": "video",
             "components": [
                 "button"
             ]
