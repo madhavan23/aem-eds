@@ -47,17 +47,11 @@
                 },
                 {
                     "component": "aem-content",
-                    "name": "textContent_cta",
-                    "label": "CTA",
+                    "name": "cta",
+                    "label": "Call To Action",
                     "valueType": "string"
-                },
-                {
-                    "component": "text",
-                    "name": "textContent_ctaText",
-                    "label": "CTA label",
-                    "valueType": "string"
-                },
-                {
+                  },
+                  {
                     "component": "select",
                     "name": "imagePosition",
                     "label": "Image Position",
