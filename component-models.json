@@ -324,22 +324,17 @@
             "valueType": "string"
         },
         {
-          "component": "aem-content",
-          "name": "cta",
-          "label": "Call To Action",
-          "valueType": "string"
+            "component": "aem-content",
+            "name": "textContent_cta",
+            "label": "CTA",
+            "valueType": "string"
         },
         {
-          "component": "select",
-          "name": "imagePosition",
-          "label": "Image Position",
-          "valueType": "string",
-          "options": [
-            { "value": "left", "label": "Left" },
-            { "value": "right", "label": "Right" }
-          ],
-          "defaultValue": "left"
-      }
+            "component": "text",
+            "name": "textContent_ctaText",
+            "label": "CTA label",
+            "valueType": "string"
+        }
     ]
   }
 ]
