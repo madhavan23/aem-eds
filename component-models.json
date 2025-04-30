@@ -343,15 +343,10 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "videoUrl",
-        "label": "Video URL"
+        "name": "video_reference",
+        "label": "Video Asset",
+        "multi": false,
+        "required": true
       },
       {
         "component": "richtext",
