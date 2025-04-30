@@ -334,7 +334,18 @@
             "name": "textContent_ctaText",
             "label": "CTA label",
             "valueType": "string"
-        }
+        },
+        {
+          "component": "select",
+          "name": "imagePosition",
+          "label": "Image Position",
+          "valueType": "string",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "right", "label": "Right" }
+          ],
+          "defaultValue": "left"
+      }
     ]
   }
 ]
