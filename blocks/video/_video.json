@@ -28,10 +28,9 @@
                     "multi": false
                 },
                 {
-                    "component": "text",
-                    "valueType": "string",
-                    "name": "videoUrl",
-                    "label": "Video URL"
+                    "component":"embed",
+                    "name":"video",
+                    "label":"Video link"
                 },
                 {
                     "component": "richtext",
