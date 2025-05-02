@@ -348,9 +348,10 @@
         "multi": false
     },
     {
-        "component":"embed",
-        "name":"video",
-        "label":"Video link"
+      "component":"text",
+      "name":"videourl",
+      "label":"Video link",
+      "valueType":"string"
     },
     {
         "component": "richtext",
