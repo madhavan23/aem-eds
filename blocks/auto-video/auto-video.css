@@ -1,0 +1,17 @@
+.video-text-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .video-player {
+    height: auto;
+    width: auto;
+  }
+
+  .text-container {
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
