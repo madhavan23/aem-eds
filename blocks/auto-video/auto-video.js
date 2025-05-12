@@ -1,6 +1,6 @@
 export default function decorate() {
   // Select all video blocks
-  const videoBlocks = document.querySelectorAll('auto-video-wrapper');
+  const videoBlocks = document.querySelectorAll('.auto-video-wrapper');
   videoBlocks.forEach((videoBlock) => {
     // Find the <p> that contains the <a> with video URL
     const videoLink = videoBlock.querySelector('p > a[href]');
