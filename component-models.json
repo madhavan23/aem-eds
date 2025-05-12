@@ -216,61 +216,61 @@
     ]
   },
   {
-    "id":"teaser",
-    "fields":[
-        {
-            "component": "reference",
-            "valueType": "string",
-            "name": "image",
-            "label": "Image",
-            "multi": false
-        },
-        {
-            "component":"text",
-            "valueType":"string",
-            "name":"imageAlt",
-            "label":"Image Alt",
-            "required": true
-        },
-        {
-            "component": "richtext",
-            "name": "textContent_text",
-            "label": "Text",
-            "valueType": "string",
-            "required": true
-        },
-        {
-            "component": "aem-content",
-            "name": "textContent_cta",
-            "label": "CTA",
-            "valueType": "string"
-        },
-        {
-            "component": "text",
-            "name": "textContent_ctaText",
-            "label": "CTA label",
-            "valueType": "string"
-        }
+    "id": "teaser",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "textContent_text",
+        "label": "Text",
+        "valueType": "string",
+        "required": true
+      },
+      {
+        "component": "aem-content",
+        "name": "textContent_cta",
+        "label": "CTA",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "textContent_ctaText",
+        "label": "CTA label",
+        "valueType": "string"
+      }
     ]
   },
   {
     "id": "quote",
     "fields": [
-       {
-         "component": "richtext",
-         "name": "quote",
-         "value": "",
-         "label": "Quote",
-         "valueType": "string"
-       },
-       {
-         "component": "text",
-         "valueType": "string",
-         "name": "author",
-         "label": "Author",
-         "value": ""
-       },
-       {
+      {
+        "component": "richtext",
+        "name": "quote",
+        "value": "",
+        "label": "Quote",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "author",
+        "label": "Author",
+        "value": ""
+      },
+      {
         "component": "select",
         "name": "classes",
         "value": "",
@@ -292,49 +292,49 @@
           }
         ]
       }
-     ]
+    ]
   },
   {
     "id": "image-text",
-    "fields":[
-        {
-            "component": "reference",
-            "valueType": "string",
-            "name": "image",
-            "label": "Image",
-            "multi": false
-        },
-        {
-            "component":"text",
-            "valueType":"string",
-            "name":"imageAlt",
-            "label":"Image Alt",
-            "required": true
-        },
-        {
-            "component": "richtext",
-            "name": "title",
-            "label": "Title",
-            "valueType": "string"
-        },
-        {
-            "component": "richtext",
-            "name": "description",
-            "label": "Description",
-            "valueType": "string"
-        },
-        {
-            "component": "aem-content",
-            "name": "textContent_cta",
-            "label": "CTA",
-            "valueType": "string"
-        },
-        {
-            "component": "text",
-            "name": "textContent_ctaText",
-            "label": "CTA label",
-            "valueType": "string"
-        }
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt",
+        "required": true
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "textContent_cta",
+        "label": "CTA",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "textContent_ctaText",
+        "label": "CTA label",
+        "valueType": "string"
+      }
     ]
   },
   {
@@ -346,25 +346,49 @@
         "name": "image",
         "label": "Image",
         "multi": false
-    },
-    {
-      "component":"text",
-      "name":"videourl",
-      "label":"Video link",
-      "valueType":"string"
-    },
-    {
+      },
+      {
+        "component": "text",
+        "name": "videourl",
+        "label": "Video link",
+        "valueType": "string"
+      },
+      {
         "component": "richtext",
         "name": "title",
         "label": "Title",
         "valueType": "string"
-    },
-    {
+      },
+      {
         "component": "richtext",
         "name": "description",
         "label": "Description",
         "valueType": "string"
-    }
+      }
+    ]
+  },
+  {
+    "id": "auto-video",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "videourl",
+        "label": "video",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      }
     ]
   }
 ]
