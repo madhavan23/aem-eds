@@ -5,7 +5,7 @@ export default function decorate() {
     const videoContainer = document.createElement('div');
     videoContainer.classList.add('video-container');
 
-    const videoIDDiv = youtubeBlock.querySelector('div[data-aue-prop="videoid"]');
+    const videoIDDiv = youtubeBlock.querySelector('[data-aue-prop="videoid"]');
     if (!videoIDDiv) return; // skip if no video ID
     const videoID = videoIDDiv.textContent.trim();
 
