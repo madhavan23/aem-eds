@@ -338,36 +338,6 @@
     ]
   },
   {
-    "id": "video",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "name": "videourl",
-        "label": "Video link",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
-        "valueType": "string"
-      }
-    ]
-  },
-  {
     "id": "auto-video",
     "fields": [
       {

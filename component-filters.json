@@ -19,7 +19,6 @@
       "teaser",
       "quote",
       "image-text",
-      "video",
       "auto-video",
       "youtube"
     ]
@@ -43,12 +42,6 @@
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id": "video",
-    "components": [
-      "button"
     ]
   }
 ]
