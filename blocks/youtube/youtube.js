@@ -26,5 +26,16 @@ export default function decorate() {
     if (descriptionDiv) {
       textContainer.appendChild(descriptionDiv.cloneNode(true));
     }
+    // Create a parent container to hold video and text side by side
+    const parentContainer = document.createElement('div');
+    parentContainer.classList.add('video-text-wrapper');
+
+    // Append video and text containers to parent
+    parentContainer.appendChild(videoContainer);
+    parentContainer.appendChild(textContainer);
+
+    // Clear existing content and append the new structure
+    videoBlock.innerHTML = '';
+    videoBlock.appendChild(parentContainer);
   });
 }
