@@ -41,12 +41,5 @@
             ]
         }
     ],
-    "filters": [
-        {
-            "id": "auto-video",
-            "components": [
-                "button"
-            ]
-        }
-    ]
+    "filters": []
 }
