@@ -1,7 +1,7 @@
 export default function decorate() {
   // Select all youtube blocks
   const youtubeBlocks = document.querySelectorAll('.youtube-wrapper');
-  youtubeBlocks.forEach((youtubeBlock) => { 
+  youtubeBlocks.forEach((youtubeBlock) => {
     const videoContainer = document.createElement('div');
     videoContainer.classList.add('video-container');
 
