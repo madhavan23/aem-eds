@@ -32,10 +32,10 @@ export default function decorate() {
 
     if (titleDiv) {
       // Append a clone or move the element to avoid removing from original place
-      textContainer.appendChild(titleDiv.cloneNode(true));
+      textContainer.appendChild(titleDiv);
     }
     if (descriptionDiv) {
-      textContainer.appendChild(descriptionDiv.cloneNode(true));
+      textContainer.appendChild(descriptionDiv);
     }
 
     // Create a parent container to hold video and text side by side
