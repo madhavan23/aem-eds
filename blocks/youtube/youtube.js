@@ -1,6 +1,6 @@
 export default function decorate() {
   // Select all youtube blocks
-  const youtubeBlocks=document.querySelectorAll('.youtube-wrapper');
+  const youtubeBlocks = document.querySelectorAll('.youtube-wrapper');
   youtubeBlocks.forEach((youtubeBlock) => {
     // videoID
     const videoID = youtubeBlock.querySelector('div[data-aue-prop="videoid"]');
@@ -10,7 +10,7 @@ export default function decorate() {
     if (videoID) {
       videoContainer.appendChild.add(videoID.cloneNode(true));
     }
-  
+
     // Create text container for title and description
     const textContainer = document.createElement('div');
     textContainer.classList.add('text-container');
