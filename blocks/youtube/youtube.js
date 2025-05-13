@@ -11,6 +11,8 @@ export default function decorate() {
     iframe.src = `https://www.youtube.com/embed/${videoID}`; // embed URL with autoplay
     iframe.allow = 'accelerometer; autoplay; picture-in-picture';
     iframe.allowFullscreen = true;
+    iframe.width = '100%';
+    iframe.height = '100%';
     iframe.classList.add('video-player-new');
 
     // Create text container for title and description
