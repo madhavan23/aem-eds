@@ -18,14 +18,7 @@
     ], "models": [
         {
             "id": "auto-video",
-            "fields": [
-                {
-                    "component": "reference",
-                    "valueType": "string",
-                    "name": "videourl",
-                    "label": "video",
-                    "multi": false
-                },
+            "fields": [             
                 {
                     "component": "richtext",
                     "name": "title",
@@ -37,6 +30,13 @@
                     "name": "description",
                     "label": "Description",
                     "valueType": "string"
+                },
+                {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "videourl",
+                    "label": "video",
+                    "multi": false
                 }
             ]
         }
