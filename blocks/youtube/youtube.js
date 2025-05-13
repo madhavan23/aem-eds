@@ -1,15 +1,20 @@
 export default function decorate() {
   // Select all youtube blocks
   const youtubeBlocks = document.querySelectorAll('.youtube-wrapper');
-  youtubeBlocks.forEach((youtubeBlock) => {
-    // videoID
-    const videoID = youtubeBlock.querySelector('div[data-aue-prop="videoid"]');
+  youtubeBlocks.forEach((youtubeBlock) => { 
     const videoContainer = document.createElement('div');
     videoContainer.classList.add('video-container');
 
-    if (videoID) {
-      videoContainer.appendChild(videoID.cloneNode(true));
-    }
+    const videoIDDiv = youtubeBlock.querySelector('div[data-aue-prop="videoid"]');
+    if (!videoIDDiv) return; // skip if no video ID
+    const videoID = videoIDDiv.textContent.trim();
+
+    // Create iframe for YouTube embed with autoplay
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1`; // embed URL with autoplay
+    iframe.allow = 'accelerometer; autoplay; picture-in-picture';
+    iframe.allowFullscreen = true;
+    videoContainer.appendChild(iframe);
 
     // Create text container for title and description
     const textContainer = document.createElement('div');
