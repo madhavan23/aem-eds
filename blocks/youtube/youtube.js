@@ -35,7 +35,7 @@ export default function decorate() {
     parentContainer.appendChild(textContainer);
 
     // Clear existing content and append the new structure
-    videoBlock.innerHTML = '';
-    videoBlock.appendChild(parentContainer);
+    youtubeBlock.innerHTML = '';
+    youtubeBlock.appendChild(parentContainer);
   });
 }
