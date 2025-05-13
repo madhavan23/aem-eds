@@ -13,7 +13,6 @@ export default function decorate() {
     iframe.allowFullscreen = true;
     iframe.width = '100%';
     iframe.height = '100%';
-    iframe.classList.add('video-player-new');
 
     // Create text container for title and description
     const textContainer = document.createElement('div');
