@@ -21,20 +21,20 @@
             "fields": [             
                 {
                     "component": "richtext",
-                    "name": "title",
+                    "name": "video-title",
                     "label": "Title",
                     "valueType": "string"
                 },
                 {
                     "component": "richtext",
-                    "name": "description",
+                    "name": "video-description",
                     "label": "Description",
                     "valueType": "string"
                 },
                 {
                     "component": "reference",
                     "valueType": "string",
-                    "name": "videourl",
+                    "name": "video-videourl",
                     "label": "video",
                     "multi": false
                 }

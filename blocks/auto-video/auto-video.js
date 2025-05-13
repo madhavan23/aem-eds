@@ -27,8 +27,8 @@ export default function decorate() {
     textContainer.classList.add('text-container');
 
     // Select title and description elements
-    const titleDiv = videoBlock.querySelector('div[data-aue-prop="title"]');
-    const descriptionDiv = videoBlock.querySelector('div[data-aue-prop="description"]');
+    const titleDiv = videoBlock.querySelector('div[data-aue-prop="video-title"]');
+    const descriptionDiv = videoBlock.querySelector('div[data-aue-prop="video-description"]');
 
     if (titleDiv) {
       // Append a clone or move the element to avoid removing from original place
