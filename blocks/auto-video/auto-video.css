@@ -15,10 +15,12 @@
     display: flex;
     flex-direction: column;
 }
+
 @media (width >= 1024px) {
   .video-text-wrapper {
   flex-direction: column;
   }
+
   .video-player {
       height: auto;
       width: 100%;
