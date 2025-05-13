@@ -16,7 +16,7 @@
     flex-direction: column;
 }
 
-@media (width >= 1024px) {
+@media (width < 1024px) {
   .video-text-wrapper {
   flex-direction: column;
   }
