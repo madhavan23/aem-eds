@@ -11,7 +11,7 @@ export default function decorate() {
 
     // Create iframe for YouTube embed with autoplay
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube.com/embed/${videoID}?rel=0&autoplay=1`; // embed URL with autoplay
+    iframe.src = `https://www.youtube.com/embed/${videoID}`; // embed URL with autoplay
     iframe.allow = 'accelerometer; autoplay; picture-in-picture';
     iframe.allowFullscreen = true;
     videoContainer.appendChild(iframe);
