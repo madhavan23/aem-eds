@@ -2,9 +2,6 @@ export default function decorate() {
   // Select all youtube blocks
   const youtubeBlocks = document.querySelectorAll('.youtube-wrapper');
   youtubeBlocks.forEach((youtubeBlock) => {
-    const videoContainer = document.createElement('div');
-    videoContainer.classList.add('video-container');
-
     const videoIDDiv = youtubeBlock.querySelector('[data-aue-prop="videoid"]');
     if (!videoIDDiv) return; // skip if no video ID
     const videoID = videoIDDiv.textContent.trim();
@@ -15,7 +12,6 @@ export default function decorate() {
     iframe.allow = 'accelerometer; autoplay; picture-in-picture';
     iframe.allowFullscreen = true;
     iframe.classList.add('video-player');
-    videoContainer.appendChild(iframe);
 
     // Create text container for title and description
     const textContainer = document.createElement('div');
@@ -37,7 +33,7 @@ export default function decorate() {
     parentContainer.classList.add('video-text-wrapper');
 
     // Append video and text containers to parent
-    parentContainer.appendChild(videoContainer);
+    parentContainer.appendChild(iframe);
     parentContainer.appendChild(textContainer);
 
     // Clear existing content and append the new structure
