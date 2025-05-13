@@ -8,7 +8,7 @@ export default function decorate() {
     videoContainer.classList.add('video-container');
 
     if (videoID) {
-      videoContainer.appendChild.add(videoID.cloneNode(true));
+      videoContainer.appendChild(videoID.cloneNode(true));
     }
 
     // Create text container for title and description
