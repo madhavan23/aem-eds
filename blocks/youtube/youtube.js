@@ -11,11 +11,11 @@ export default function decorate() {
     iframe.src = `https://www.youtube.com/embed/${videoID}`; // embed URL with autoplay
     iframe.allow = 'accelerometer; autoplay; picture-in-picture';
     iframe.allowFullscreen = true;
-    iframe.classList.add('video-player');
+    iframe.classList.add('video-player-new');
 
     // Create text container for title and description
     const textContainer = document.createElement('div');
-    textContainer.classList.add('text-container');
+    textContainer.classList.add('text-container-new');
 
     // Select title and description elements
     const titleDiv = youtubeBlock.querySelector('div[data-aue-prop="title"]');
@@ -30,7 +30,7 @@ export default function decorate() {
     }
     // Create a parent container to hold video and text side by side
     const parentContainer = document.createElement('div');
-    parentContainer.classList.add('video-text-wrapper');
+    parentContainer.classList.add('youtube-text-wrapper');
 
     // Append video and text containers to parent
     parentContainer.appendChild(iframe);
