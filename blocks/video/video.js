@@ -15,7 +15,7 @@ export default function decorate() {
     videoPlay.playsInline = true;
     videoPlay.controls = true;
     videoPlay.classList.add('video-auto-player');
-     // Create text container for title and description
+    // Create text container for title and description
     const videoTextContainer = document.createElement('div');
     videoTextContainer.classList.add('video-text-container');
 
