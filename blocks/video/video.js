@@ -1,15 +1,15 @@
 export default function decorate() {
-  const videoWrapper = document.querySelectorAll(".video-wrapper");
+  const videoWrapper = document.querySelectorAll('.video-wrapper');
   videoWrapper.forEach((item) => {
-    const videoPath = item.querySelector("p > a[href]");
-    const videoUrl = videoPath.getAttribute("href");
-    const videoPlayer = document.createElement("video");
+    const videoPath = item.querySelector('p > a[href]');
+    const videoUrl = videoPath.getAttribute('href');
+    const videoPlayer = document.createElement('video');
     videoPlayer.src = videoUrl;
     videoPlayer.autoplay = true;
     videoPlayer.muted = true;
     videoPlayer.playsInline = true;
     videoPlayer.controls = true;
-    videoPlayer.classList.add("video-player");
+    videoPlayer.classList.add('video-player');
 
     const videoTextContainer = document.createElement('div');
     videoTextContainer.classList.add('video-text-container');
@@ -24,7 +24,7 @@ export default function decorate() {
       } else {
         videoTextContainer.appendChild(div);
       }
-  });
+    });
 
     // Remove empty divs inside the wrapper
     item.querySelectorAll('div').forEach((div) => {
