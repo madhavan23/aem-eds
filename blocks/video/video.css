@@ -1,0 +1,23 @@
+.video-auto-text-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .video-auto-player {
+    height: auto;
+    width: 100%;
+  }
+
+  .video-text-container {
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (width < 1024px) {
+  .video-auto-text-wrapper {
+  flex-direction: column;
+  }
+}

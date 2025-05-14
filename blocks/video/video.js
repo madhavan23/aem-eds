@@ -17,7 +17,7 @@ export default function decorate() {
     videoPlay.classList.add('video-auto-player');
     // Create text container for title and description
     const videoTextContainer = document.createElement('div');
-    videoTextContainer.classList.add('video-text-container');
+    videoTextContainer.classList.add('video-auto-text-container');
 
     // Select title and description elements
     const titleVideoDiv = autoVideoBlock.querySelector('div[data-aue-prop="video-title"]');
@@ -38,9 +38,5 @@ export default function decorate() {
     // Append video and text containers to parent
     videoParentContainer.appendChild(videoPlay);
     videoParentContainer.appendChild(videoTextContainer);
-
-    // Clear existing content and append the new structure
-    autoVideoBlock.innerHTML = '';
-    autoVideoBlock.appendChild(videoParentContainer);
   });
 }
