@@ -2,11 +2,6 @@ export default function decorate() {
   const videoWrapper = document.querySelectorAll('.video-wrapper');
   videoWrapper.forEach((item) => {
     const componentDiv = item.querySelector('div[data-aue-type="component"]');
-    Array.from(componentDiv.children).forEach((child) => {
-      if (child.tagName === 'DIV') {
-        componentDiv.removeChild(child);
-      }
-    });
     const videoPath = item.querySelector('p > a[href]');
     const videoUrl = videoPath.getAttribute('href');
     const videoPlayer = document.createElement('video');
