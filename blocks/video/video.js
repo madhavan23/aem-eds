@@ -11,22 +11,20 @@ export default function decorate() {
     videoPlayer.controls = true;
     videoPlayer.classList.add("video-player");
 
-    const videoTextContainer = document.createElement("div");
-    videoTextContainer.classList.add("video-text-container");
+    const videoTextContainer = document.createElement('div');
+    videoTextContainer.classList.add('video-text-container');
     const contentDivs = item.querySelectorAll(
-      'div[data-aue-prop="video-title"],div[data-aue-prop="video-description"]'
+      'div[data-aue-prop="video-title"],div[data-aue-prop="video-description"]',
     );
 
     contentDivs.forEach((div) => {
       const parentDiv = div.parentElement;
-        if (parentDiv && parentDiv.parentElement === item) {
-          videoTextContainer.appendChild(parentDiv);
-        } else {
-          videoTextContainer.appendChild(div);
-        }
-    });
-
-
+      if (parentDiv && parentDiv.parentElement === item) {
+        videoTextContainer.appendChild(parentDiv);
+      } else {
+        videoTextContainer.appendChild(div);
+      }
+  });
 
     // Remove empty divs inside the wrapper
     item.querySelectorAll('div').forEach((div) => {
