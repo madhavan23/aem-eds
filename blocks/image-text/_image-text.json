@@ -56,6 +56,12 @@
                     "name": "textContent_ctaText",
                     "label": "CTA label",
                     "valueType": "string"
+                },
+                {
+                    "component": "text",
+                    "name": "comment",
+                    "label": "Comment",
+                    "valueType": "string"
                 }
             ]
         }
