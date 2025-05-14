@@ -42,9 +42,9 @@ export default function decorate() {
     parentContainer.appendChild(videoPlayer);
     parentContainer.appendChild(videoTextContainer);
     componentDiv.appendChild(parentContainer);
-    const path=item.querySelector('p.button-container');
-    if (path && path.parentElement){
-        path.parentNode.remove();
+    const path = item.querySelector('p.button-container');
+    if (path && path.parentElement) {
+      path.parentNode.remove();
     }
   });
 }
