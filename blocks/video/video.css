@@ -1,4 +1,4 @@
-.video-auto-text-wrapper {
+.video-text-wrapper {
     display: flex;
     gap: 20px;
     align-items: flex-start;
@@ -17,7 +17,7 @@
 }
 
 @media (width < 1024px) {
-  .video-auto-text-wrapper {
+  .video-text-wrapper {
   flex-direction: column;
   }
 }
