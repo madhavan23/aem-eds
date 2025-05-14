@@ -1,6 +1,7 @@
 export default function decorate() {
   const videoWrapper = document.querySelectorAll('.video-wrapper');
   videoWrapper.forEach((item) => {
+    const componentDiv = item.querySelector('div[data-aue-type="component"]');
     const videoPath = item.querySelector('p > a[href]');
     const videoUrl = videoPath.getAttribute('href');
     const videoPlayer = document.createElement('video');
@@ -40,6 +41,6 @@ export default function decorate() {
     // Append video and text containers to parent
     parentContainer.appendChild(videoPlayer);
     parentContainer.appendChild(videoTextContainer);
-    item.appendChild(parentContainer);
+    componentDiv.appendChild(parentContainer);
   });
 }
