@@ -1,0 +1,45 @@
+{
+    "definitions": [{
+        "title": "Video",
+        "id": "video",
+        "plugins": {
+          "xwalk": {
+            "page": {
+              "resourceType": "core/franklin/components/block/v1/block",
+              "template": {
+                "name": "Video",
+                "model": "video"
+              }
+            }
+          }
+        }
+      }
+    ],
+     "models": [
+        {
+            "id":"video",
+            "fields":[
+                {
+                    "component": "richtext",
+                    "name": "video-title",
+                    "label": "Title",
+                    "valueType": "string"
+                },
+                {
+                    "component": "richtext",
+                    "name": "video-description",
+                    "label": "Description",
+                    "valueType": "string"
+                },
+                {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "src-video",
+                    "label": "Video",
+                    "multi": false
+                }
+            ]
+        }
+    ],
+    "filters": []
+}
