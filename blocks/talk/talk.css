@@ -47,7 +47,7 @@
   }
 
   /* Fix media query syntax and add padding on large screens */
-  @media (min-width: 1024px) {
+  @media (width >= 1024px) {
     & > div.talk.block > div:nth-last-child(1),
     & > div.talk.block > div:nth-last-child(2) {
       padding: 0 200px;
