@@ -324,21 +324,21 @@
         "valueType": "string"
       },
       {
+        "component": "text",
+        "name": "commentGroup_comment",
+        "label": "Comment",
+        "valueType": "string"
+      },
+      {
         "component": "aem-content",
-        "name": "textContent_cta",
+        "name": "commentGroup_textContent_cta",
         "label": "CTA",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "textContent_ctaText",
+        "name": "commentGroup_textContent_ctaText",
         "label": "CTA label",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "comment",
-        "label": "Comment",
         "valueType": "string"
       }
     ]
