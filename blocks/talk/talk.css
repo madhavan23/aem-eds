@@ -5,51 +5,24 @@
     display: block;
     margin: auto;
     padding-top: 40px;
-    max-width: 100%;
-    height: auto;
   }
 
-  /* Make the immediate child div a flex container */
-  & > div.talk.block {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap; /* allow wrapping on small screens */
-  }
-
-  /* Target the first child div inside .talk.block (the image container) */
-  & > div.talk.block > div:first-child {
-    order: 2; /* move image container to the right */
-    flex: 0 0 200px; /* fixed width for image container */
-    display: flex;
-    justify-content: center;
-  }
-
-  /* All other div siblings (text content) */
-  & > div.talk.block > div:not(:first-child) {
-    order: 1; /* text on the left */
-    flex: 1 1 auto; /* take remaining space */
-    color: white;
-  }
-
-  /* Center text and add margin for last two divs */
-  & > div.talk.block > div:nth-last-child(1),
-  & > div.talk.block > div:nth-last-child(2) {
+  &>div:nth-last-child(1),
+  &>div:nth-last-child(2) {
     text-align: center;
     margin-top: 20px;
     color: white;
   }
 
-  a.button {
+  a.button{
     background-color: white;
     color: black;
-    border-radius: 0%;
+    border-radius:0%;
   }
 
-  /* Fix media query syntax and add padding on large screens */
   @media (width >= 1024px) {
-    & > div.talk.block > div:nth-last-child(1),
-    & > div.talk.block > div:nth-last-child(2) {
+    &>div:nth-last-child(1),
+    &>div:nth-last-child(2) {
       padding: 0 200px;
     }
   }
