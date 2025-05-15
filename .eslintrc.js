@@ -24,7 +24,7 @@ module.exports = {
       files: ['*'],
       rules: {
         'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
-         'xwalk/max-cells': ['error', { maxCells: 10 }],
+        'xwalk/max-cells': ['error', { maxCells: 10 }],
       },
     },
   ],
