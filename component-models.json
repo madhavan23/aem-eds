@@ -416,7 +416,7 @@
     ]
   },
   {
-    "id": "hero",
+    "id": "talk",
     "fields": [
       {
         "component": "reference",
@@ -438,7 +438,7 @@
         "value": "",
         "label": "Title",
         "valueType": "string"
-      },
+      },        
       {
         "component": "richtext",
         "name": "description-talk",
