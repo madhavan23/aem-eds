@@ -331,13 +331,13 @@
       },
       {
         "component": "aem-content",
-        "name": "commentGroup_textContent_cta",
+        "name": "commentGroup_textContentCta",
         "label": "CTA",
         "valueType": "string"
       },
       {
         "component": "text",
-        "name": "commentGroup_textContent_ctaText",
+        "name": "commentGroup_textContentCtaText",
         "label": "CTA label",
         "valueType": "string"
       }
