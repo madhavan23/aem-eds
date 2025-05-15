@@ -5,11 +5,13 @@
   img {
     display: block;
     margin: auto;
+    margin-top: 40px;
   }
 
   &>div:nth-last-child(1),
   &>div:nth-last-child(2) {
     text-align: center;
     margin-top: 20px;
+    color: white;
   }
 }
