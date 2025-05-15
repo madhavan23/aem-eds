@@ -1,0 +1,15 @@
+.talk-wrapper {
+  margin: 0 70px;
+  background-color: black;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+  &>div:nth-last-child(1),
+  &>div:nth-last-child(2) {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

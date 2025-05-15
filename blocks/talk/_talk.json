@@ -45,7 +45,7 @@
           "component": "richtext",
           "name": "description-talk",
           "value": "",
-          "label": "Title",
+          "label": "Description",
           "valueType": "string"
         }
       ]
