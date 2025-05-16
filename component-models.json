@@ -342,12 +342,9 @@
         "valueType": "string"
       },
       {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Image position",
-        "description": "image position",
-        "valueType": "string",
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
         "options": [
             {
               "name": "Right",
