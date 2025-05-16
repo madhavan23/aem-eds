@@ -60,17 +60,11 @@
                 },
                 {
                     "component": "select",
-                    "name": "commentGroup_classes",
+                    "name": "classes",
                     "value": "",
                     "label": "Image position",
-                    "description": "image position",
+                    "description": "Image Position",
                     "valueType": "string",
-                    "options": []
-                },
-                {
-                    "component": "multiselect",
-                    "name": "style",
-                    "label": "Style",
                     "options": [
                         {
                             "name": "Right",

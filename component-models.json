@@ -336,18 +336,21 @@
         "valueType": "string"
       },
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Image position",
+        "description": "Image Position",
+        "valueType": "string",
         "options": [
-            {
-              "name": "Right",
-              "value": "p-right"
-            },
-            {
-              "name": "Left",
-              "value": "p-left"
-            }
+          {
+            "name": "Right",
+            "value": "p-right"
+          },
+          {
+            "name": "Left",
+            "value": "p-left"
+          }
         ]
       }
     ]
