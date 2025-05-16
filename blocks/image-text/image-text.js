@@ -46,3 +46,28 @@
 //     }
 //   });
 // }
+
+export default function decorate() {
+  // Select all elements with class 'image-text'
+  const imageTextElements = document.querySelectorAll('.image-text');
+
+  imageTextElements.forEach((block) => {
+    // Create the new container div for all except first child
+    const contentContainer = document.createElement('div');
+    contentContainer.classList.add('textContainer');
+
+    // Get all child divs of the block
+    const children = Array.from(block.children);
+
+    // Skip if no children or only one child
+    if (children.length <= 1) return;
+
+    // Append all children except the first one into contentContainer
+    children.slice(1).forEach((child) => {
+      contentContainer.appendChild(child);
+    });
+
+    // Append the contentContainer back to the block
+    block.appendChild(contentContainer);
+  });
+}
