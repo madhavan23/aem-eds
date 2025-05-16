@@ -52,25 +52,3 @@
       margin-left: 75px;
     }
 } */
-
-.image-text {
-  display: flex;
-  gap: 20px; /* spacing between image and content */
-  align-items: flex-start; /* align top */
-  flex-wrap: wrap; /* allow wrapping on small screens */
-}
-
-/* Make the first div (image container) take 40% width */
-.image-text > div:first-child {
-  flex: 1 1 40%;
-  max-width: 40%;
-}
-
-/* Make all other div siblings take 60% width and stack vertically */
-.image-text > div:not(:first-child) {
-  flex: 1 1 60%;
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
