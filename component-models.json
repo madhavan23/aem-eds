@@ -344,16 +344,12 @@
         "valueType": "string",
         "options": [
           {
-            "name": "Red",
-            "value": "bg-red"
+            "name": "Right",
+            "value": "bg-right"
           },
           {
-            "name": "Green",
-            "value": "bg-green"
-          },
-          {
-            "name": "Blue",
-            "value": "bg-blue"
+            "name": "Left",
+            "value": "bg-left"
           }
         ]
       }
