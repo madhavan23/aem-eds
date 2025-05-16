@@ -62,17 +62,21 @@
                     "component": "select",
                     "name": "classes",
                     "value": "",
-                    "label": "Image position",
-                    "description": "Image Position",
+                    "label": "Background Color",
+                    "description": "The quote background color",
                     "valueType": "string",
                     "options": [
                         {
-                            "name": "Right",
-                            "value": "p-right"
+                            "name": "Red",
+                            "value": "bg-red"
                         },
                         {
-                            "name": "Left",
-                            "value": "p-left"
+                            "name": "Green",
+                            "value": "bg-green"
+                        },
+                        {
+                            "name": "Blue",
+                            "value": "bg-blue"
                         }
                     ]
                 }
