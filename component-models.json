@@ -313,13 +313,13 @@
       },
       {
         "component": "richtext",
-        "name": "title",
+        "name": "commentGroup_title",
         "label": "Title",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "description",
+        "name": "commentGroup_description",
         "label": "Description",
         "valueType": "string"
       },
@@ -337,7 +337,7 @@
       },
       {
         "component": "multiselect",
-        "name": "commentGroup_style",
+        "name": "style",
         "label": "Style",
         "options": [
             {
