@@ -60,10 +60,15 @@
 }
 
 
-.textContainer {
+.text-containerr {
   color: #fff;
-  font-size: 40px;
-  font-size: 18px;
+  h4{
+    font-size: 40px;
+  }
+  p{
+    font-size: 18px;
+  }
+
 }
 
 .image-text-wrapper {
@@ -79,11 +84,11 @@
 }
 
 @media (width >=1024px) {
-  .image-text-parent-container {
+  .image-text {
     flex-direction: row;
   }
 
-  .text-container {
+  .text-containerr {
     margin-left: 75px;
   }
 }

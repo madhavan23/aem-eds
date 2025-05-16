@@ -54,7 +54,7 @@ export default function decorate() {
   imageTextElements.forEach((block) => {
     // Create the new container div for all except first child
     const contentContainer = document.createElement('div');
-    contentContainer.classList.add('textContainer');
+    contentContainer.classList.add('text-containerr');
 
     // Get all child divs of the block
     const children = Array.from(block.children);
