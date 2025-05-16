@@ -47,12 +47,6 @@
                     "valueType": "string"
                 },
                 {
-                    "component": "text",
-                    "name": "commentGroup_comment",
-                    "label": "Comment",
-                    "valueType": "string"
-                },
-                {
                     "component": "aem-content",
                     "name": "commentGroup_textContentCta",
                     "label": "CTA",
@@ -71,6 +65,12 @@
                     "label": "Image position",
                     "description": "image position",
                     "valueType": "string",
+                    "options": []
+                },
+                {
+                    "component": "multiselect",
+                    "name": "commentGroup_style",
+                    "label": "Style",
                     "options": [
                         {
                             "name": "Right",

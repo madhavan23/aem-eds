@@ -324,12 +324,6 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "name": "commentGroup_comment",
-        "label": "Comment",
-        "valueType": "string"
-      },
-      {
         "component": "aem-content",
         "name": "commentGroup_textContentCta",
         "label": "CTA",
@@ -343,7 +337,7 @@
       },
       {
         "component": "multiselect",
-        "name": "style",
+        "name": "commentGroup_style",
         "label": "Style",
         "options": [
             {
