@@ -340,6 +340,24 @@
         "name": "commentGroup_textContentCtaText",
         "label": "CTA label",
         "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Image position",
+        "description": "image position",
+        "valueType": "string",
+        "options": [
+            {
+              "name": "Right",
+              "value": "p-right"
+            },
+            {
+              "name": "Left",
+              "value": "p-left"
+            }
+        ]
       }
     ]
   },
